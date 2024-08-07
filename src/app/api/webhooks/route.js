@@ -57,5 +57,9 @@ export async function POST(req) {
     console.log('User created');
   }
 
+  if(eventType ==='user.updated') {
+    console.log('User updated');
+  }
+
   return new Response('', { status: 200 })
 }
